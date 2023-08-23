@@ -1,0 +1,35 @@
+
+@keyframes from-left {
+    from { 
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to { 
+      opacity: 1; 
+      transform: translateX(0px);
+    }
+  }
+   
+  .animate-fade-in {
+    animation-name: from-left;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+   
+  @keyframes from-right {
+    from { 
+      opacity: 0;
+      transform: translateX(20px);
+      }
+    to { 
+      opacity: 1; 
+      transform: translateX(0px);
+    }
+  }
+   
+  .animate-from-bottom {
+    animation-name: from-right;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+  

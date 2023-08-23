@@ -22,7 +22,7 @@ function Navbar() {
               About
             </Link>
             <Link
-              to={"/"}
+              to={"/event"}
               className=" font-semiblod hover:bg-[#3CA465] px-3 py-1  md:rounded-xl hover:text-gray-900"
             >
               Events
