@@ -20,7 +20,7 @@ function Navbar() {
             <Link to={'/'} className=" font-semiblod hover:bg-[#3CA465] px-3 py-1  md:rounded-xl hover:text-gray-900">Events</Link>
             <Link to={'/'} className=" font-semiblod hover:bg-[#3CA465] px-3 py-1  md:rounded-xl hover:text-gray-900">Leads</Link>
             <Link to={'/'} className=" font-semiblod hover:bg-[#3CA465] px-3 py-1  md:rounded-xl hover:text-gray-900">Register</Link>
-            <Link to={'/'} className=" font-semiblod hover:bg-[#3CA465] px-3 py-1  md:rounded-xl hover:text-gray-900">Contact</Link>
+            <Link to={'/contact'} className=" font-semiblod hover:bg-[#3CA465] px-3 py-1  md:rounded-xl hover:text-gray-900">Contact</Link>
           </nav>
           <div className="inline-flex items-center  ">
             <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 ">
