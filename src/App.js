@@ -10,6 +10,7 @@ import Empty from "./component/Empty";
 import Event from "./component/Event";
 import Events from "./component/Events";
 import { useEffect, useState } from 'react'
+import ScrollToTop from "./component/Scrolltotop";
 
 
 
@@ -17,6 +18,7 @@ function App() {
   const [leads,setleads]= useState(0);
   return (
     <BrowserRouter className="overflow-x-hidden">
+    <ScrollToTop />
       <Navbar />
 
       <Routes>

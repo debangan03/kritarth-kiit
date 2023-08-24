@@ -5,6 +5,11 @@ module.exports = {
     extend: {
       colors:{
         
+      },
+      fontFamily:{
+        'Mulish':'Mulish',
+        'Rubik':'Rubik',
+        'Poppins':'Poppins'
       }
     },
   },

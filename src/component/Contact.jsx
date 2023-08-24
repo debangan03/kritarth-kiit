@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 const Contact = () => {
   return (
-    <div className='w-[100vw] min-h-[100vh] '>
+    <div className='w-[100vw] font-Poppins '>
       <div className='max-w-[1920px] mx-auto p-3 sm:p-0 flex flex-col justify-center mt-[10px]'>
         <div className='mx-auto  text-black text-[25px] not-italic font-semibold leading-normal capitalize h-full'>
           CONTACT US
@@ -32,6 +32,7 @@ const Contact = () => {
           <div className='flex flex-col md:items-center xl:items-start'>
             <p className='text-[18px] lg:text-[22px] font-medium '>EMAIL</p>
             <a href="mailto: info.kritarth@gmail.com" className='cursor-pointer'>info.kritarth@gmail.com</a>
+            <a href="mailto: khwaab.ksac@gmail.com" className='cursor-pointer'>khwaab.ksac@gmail.com</a>
           </div>
           <div className='flex flex-col md:items-center xl:items-start'>
             <p className='text-[18px] lg:text-[22px] font-medium'>SOCIAL MEDIA</p>
@@ -47,13 +48,13 @@ const Contact = () => {
           <div className='flex flex-col md:items-center xl:items-start'>
             <p className='text-[18px] lg:text-[22px] font-medium'>QUICK LINKS</p>
             <Link to={'/about'} className='cursor-pointer'>About</Link>
-            <Link to={'/'} className='cursor-pointer'>Events</Link>
+            <Link to={'/event'} className='cursor-pointer'>Events</Link>
             <Link to={'/'} className='cursor-pointer'>Leads</Link>
             <Link to={'/'} className='cursor-pointer'>Register</Link>
           </div>
         </div>
-        <div className='text:-[15px] xl:text-[20px] font-medium w-[100%] sm:w-[70%] md:w-[97%] mx-auto flex items-center mt-[35px] mb-[18px] '>
-          <img src={copyright} className='h-[25px] translate-y-1' />
+        <div className='text-[15px] xl:text-[20px] font-medium w-[100%] sm:w-[70%] md:w-[97%] mx-auto flex items-center mt-[35px] mb-[18px] '>
+          <img src={copyright} className='h-[25px] translate-y-[2px]' />
           <p className='pl-[2px]'>2023 KIIT KHWAAB. All rights reserved.</p>
 
         </div>
