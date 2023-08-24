@@ -54,7 +54,7 @@ function Navbar() {
         </div>
       </header>
 
-      <nav className="bg-slate-200/20 md:hidden">
+      <nav className="bg-slate-500/40 md:hidden sticky top-0">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div
