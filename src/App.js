@@ -11,6 +11,7 @@ import Event from "./component/Event";
 import Events from "./component/Events";
 import { useEffect, useState } from 'react'
 import ScrollToTop from "./component/Scrolltotop";
+import Lead from "./lead";
 
 
 
@@ -27,7 +28,7 @@ function App() {
         <Route path="/contacts" element={<Empty />} />
         <Route path="/event" element={<Event setleads={setleads}/>} />
         <Route path="/events" element= {<Events leads={leads} />} />
-
+        <Route path="/leads" element={<Lead/>} />
 
       </Routes>
 

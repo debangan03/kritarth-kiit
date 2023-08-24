@@ -28,7 +28,7 @@ function Navbar() {
               Events
             </Link>
             <Link
-              to={"/"}
+              to={"/leads"}
               className=" font-semiblod hover:bg-[#3CA465] px-3 py-1  md:rounded-xl hover:text-gray-900"
             >
               Leads
