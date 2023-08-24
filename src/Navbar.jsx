@@ -4,44 +4,66 @@ import ksac from "./images/KSAC_LOGO_1.png";
 import back from "./images/Background_Image.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useEffect } from "react";
 
 function Navbar() {
   const [click, setclick] = useState(false);
+  const [about, setabout] = useState(false);
+  const [events, setevents] = useState(false);
+  const [leads, setleads] = useState(false);
+  const [contact, setcontact] = useState(false);
+  const [reg, setreg] = useState(false);
+  const [navColor, setnavColor] = useState("transparent");
+  const listenScrollEvent = () => {
+    window.scrollY > 30 ? setnavColor("slate-500/40") : setnavColor("transparent");
+
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []);
   return (
     <>
-      <header className="text-gray-90 bg-slate-500/30 hidden  md:flex shadow-2xl shadow-slate-700/10 body-font z-30 md:sticky top-0">
+      <header className={`text-gray-90 bg-${navColor} hidden w-screen md:flex shadow-2xl z-50 shadow-slate-700/10 body-font  md:sticky top-0 `}>
         <div className="container mx-auto flex flex-wrap px-5 py-1 flex-col md:flex-row items-center">
           <div className="flex title-font font-base items-center text-gray-900 mb-4 md:mb-0">
             <img src={kiit} alt="kiitlogo" className="h-10 md:h-full" />
           </div>
-          <nav className="md:ml-auto md:mr-auto flex  flex-wrap items-center md:text-lg text-sm space-x-2 justify-center">
+          <nav className="md:ml-auto md:mr-auto flex  flex-wrap text-white items-center md:text-lg text-sm space-x-2 justify-center nav_font">
             <Link
+              onClick={() => { setabout(true); setevents(false); setleads(false); setcontact(false); setreg(false) }}
               to={"/about"}
-              className=" font-semiblod hover:bg-[#3CA465] px-3 py-1  md:rounded-xl hover:text-gray-900"
+              className={`font-semiblod ${about && 'bg-[#3CA465]'} px-3 py-1  md:rounded-xl hover:text-gray-900`}
             >
               About
             </Link>
             <Link
+              onClick={() => { setabout(false); setevents(true); setleads(false); setcontact(false); setreg(false) }}
               to={"/event"}
-              className=" font-semiblod hover:bg-[#3CA465] px-3 py-1  md:rounded-xl hover:text-gray-900"
+              className={`font-semiblod ${events && 'bg-[#3CA465]'} px-3 py-1  md:rounded-xl hover:text-gray-900`}
             >
               Events
             </Link>
             <Link
-              to={"/leads"}
-              className=" font-semiblod hover:bg-[#3CA465] px-3 py-1  md:rounded-xl hover:text-gray-900"
+              onClick={() => { setabout(false); setevents(false); setleads(true); setcontact(false); setreg(false) }}
+              to={"/"}
+              className={`font-semiblod ${leads && 'bg-[#3CA465]'} px-3 py-1  md:rounded-xl hover:text-gray-900`}
             >
               Leads
             </Link>
             <Link
+              onClick={() => { setabout(false); setevents(false); setleads(flase); setcontact(false); setreg(true) }}
               to={"/"}
-              className=" font-semiblod hover:bg-[#3CA465] px-3 py-1  md:rounded-xl hover:text-gray-900"
+              className={`font-semiblod ${reg && 'bg-[#3CA465]'} px-3 py-1  md:rounded-xl hover:text-gray-900`}
             >
               Register
             </Link>
             <Link
+              onClick={() => { setabout(false); setevents(false); setleads(false); setcontact(true); setreg(false) }}
               to={"/contacts"}
-              className=" font-semiblod hover:bg-[#3CA465] px-3 py-1  md:rounded-xl hover:text-gray-900"
+              className={`font-semiblod ${contact && 'bg-[#3CA465]'} px-3 py-1  md:rounded-xl hover:text-gray-900`}
             >
               Contact
             </Link>
@@ -54,7 +76,7 @@ function Navbar() {
         </div>
       </header>
 
-      <nav className="bg-slate-500/40 md:hidden sticky top-0">
+      <nav className="bg-slate-500/40 md:hidden sticky top-0 z-50">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div
@@ -140,37 +162,37 @@ function Navbar() {
         </div>
         {/* Mobile menu, show/hide based on menu state. */}
         {click && (
-          <div className="sm:hidden" id="mobile-menu">
+          <div className="sm:hidden fixed backdrop-blur-sm bg-slate-500/40 w-screen z-50" id="mobile-menu">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              {/* Current: "bg-gray-900 text-white", Default: "text-black hover:bg-gray-700 hover:text-white" */}
+              {/* Current: "bg-gray-900 text-white", Default: "text-white hover:bg-gray-700 hover:text-white" */}
               <Link
                 to={'/about'}
-                className=" text-black hover:bg-green-600 block rounded-md px-3 py-2 text-base font-medium"
+                className=" text-white hover:bg-green-600 block rounded-md px-3 py-2 text-base font-medium"
                 aria-current="page"
               >
                 About
               </Link>
               <Link
-                to={'/event'}
-                className="text-black hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                to={'/'}
+                className="text-white hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               >
                 Events
               </Link>
               <Link
                 to={'/'}
-                className="text-black hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                className="text-white hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               >
                 Leads
               </Link>
               <Link
                 to={'/'}
-                className="text-black hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                className="text-white hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               >
                 Register
               </Link>
               <Link
                 to={'/contacts'}
-                className="text-black hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                className="text-white hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               >
                 Contacts
               </Link>
@@ -179,11 +201,14 @@ function Navbar() {
         )}
       </nav>
 
-      <img
+      {/* <img
         src={back}
         alt="bg"
         className="  fixed top-0 -z-20 right-0 w-screen h-screen"
-      />
+      /> */}
+      {/* <div className="fixed top-0 -z-20 right-0 w-screen h-screen back">
+
+      </div> */}
     </>
   );
 }
