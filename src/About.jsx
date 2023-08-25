@@ -76,7 +76,7 @@ function About() {
         <div className="flex flex-col md:flex-row  relative  rounded-md bg-[rgba(186,186,186,0.34)]  items-center  h-[1127px] w-[1233px]">
           <div>
             <img
-              src={kiit}
+              src={kiit} 
               alt=""
               className="shadow-inner "
             />

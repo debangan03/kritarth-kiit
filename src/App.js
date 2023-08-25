@@ -10,11 +10,13 @@ import Empty from "./component/Empty";
 import Event from "./component/Event";
 import Events from "./component/Events";
 import { useEffect, useState } from "react";
+// import {Scrolltop} from "./component/Scrolltop";
 
 function App() {
   const [leads, setleads] = useState(0);
   return (
     <BrowserRouter>
+      {/* <Scrolltop/> */}
       <Navbar />
 
       <Routes className="overflow-x-hidden">
