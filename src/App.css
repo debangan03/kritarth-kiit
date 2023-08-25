@@ -32,7 +32,7 @@
     transform: translateX(0px);
   }
 }
- 
+
 .animate-from-bottom {
   animation-name: from-right;
   animation-duration: 1s;

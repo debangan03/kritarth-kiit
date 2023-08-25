@@ -50,7 +50,7 @@ const Contact = () => {
             <Link to={'/about'} className='cursor-pointer'>About</Link>
             <Link to={'/event'} className='cursor-pointer'>Events</Link>
             <Link to={'/leads'} className='cursor-pointer'>Leads</Link>
-            <Link to={'/'} className='cursor-pointer'>Register</Link>
+            <Link to={'/form'} className='cursor-pointer'>Register</Link>
           </div>
         </div>
         <div className='text-[15px] xl:text-[20px] font-medium w-[100%] sm:w-[70%] md:w-[97%] mx-auto flex items-center mt-[35px] mb-[18px] '>
@@ -59,7 +59,9 @@ const Contact = () => {
 
         </div>
       </div>
-      
+      {/* <div className="fixed top-0 -z-20 right-0 w-screen h-screen back">
+
+      </div> */}
 
     </div>
 
