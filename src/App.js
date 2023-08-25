@@ -11,6 +11,7 @@ import Event from "./component/Event";
 import Events from "./component/Events";
 import { useEffect, useState } from "react";
 import Leads from "./lead";
+import Form from "./form";
 
 import Scrolltop from "./component/ScrollItToTop";
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/event" element={<Event setleads={setleads} />} />
         <Route path="/events" element={<Events leads={leads} />} />
         <Route path="/leads" element={<Leads />} />
+        <Route path="/form" element={<Form />} />
       </Routes>
 
       <Contact />

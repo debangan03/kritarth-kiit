@@ -120,7 +120,7 @@ export const leadData = [
     },
     {
         id : 18,
-        image : 'Sourav Kumar Sahoo.jpg',
+        image : 'Sohini.jpg',
         igLink: 'https://www.instagram.com/lonepair.4/',
         linkedinLink:'https://www.linkedin.com/in/abhardwaj28/',
         name: 'Sohini Joarder'
