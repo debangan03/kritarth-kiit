@@ -16,7 +16,7 @@ const Lead = () => {
                 </ul>
             </div>
             <div className="flex flex-wrap">
-            {leadData.slice(1, 4).map(item => (
+            {leadData.slice(1, 4).map(item =>(
                 <div key={item.name} className="w-full md:w-1/3 p-4 flex flex-col items-center">
                 <img src={item.image} alt={item.name} className="rounded-full w-48 h-48 object-cover"/>
                 <h3 className="mt-4 font-bold">{item.name}</h3>
