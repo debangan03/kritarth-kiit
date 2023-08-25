@@ -10,6 +10,8 @@ import Empty from "./component/Empty";
 import Event from "./component/Event";
 import Events from "./component/Events";
 import { useEffect, useState } from "react";
+import Leads from "./lead";
+
 
 function App() {
   const [leads, setleads] = useState(0);
@@ -23,6 +25,7 @@ function App() {
         <Route path="/contacts" element={<Empty />} />
         <Route path="/event" element={<Event setleads={setleads} />} />
         <Route path="/events" element={<Events leads={leads} />} />
+        <Route path="/leads" element={<Leads />} />
       </Routes>
 
       <Contact />

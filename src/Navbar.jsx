@@ -48,13 +48,13 @@ function Navbar() {
             </Link>
             <Link
               onClick={() => { setabout(false); setevents(false); setleads(true); setcontact(false); setreg(false) }}
-              to={"/"}
+              to={"/leads"}
               className={`font-semiblod ${leads && 'bg-[#3CA465]'} px-3 py-1  md:rounded-xl hover:text-gray-900`}
             >
               Leads
             </Link>
             <Link
-              onClick={() => { setabout(false); setevents(false); setleads(flase); setcontact(false); setreg(true) }}
+              onClick={() => { setabout(false); setevents(false); setleads(false); setcontact(false); setreg(true) }}
               to={"/"}
               className={`font-semiblod ${reg && 'bg-[#3CA465]'} px-3 py-1  md:rounded-xl hover:text-gray-900`}
             >
@@ -179,7 +179,7 @@ function Navbar() {
                 Events
               </Link>
               <Link
-                to={'/'}
+                to={'/leads'}
                 className="text-white hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               >
                 Leads

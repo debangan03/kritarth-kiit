@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom'
 
 const Contact = () => {
   return (
-    <div className='w-[100vw] font-Poppins '>
+    <div className='w-[100vw] font-Poppins text-white'>
       <div className='max-w-[1920px] mx-auto p-3 sm:p-0 flex flex-col justify-center mt-[10px]'>
-        <div className='mx-auto  text-black text-[25px] not-italic font-semibold leading-normal capitalize h-full'>
+        <div className='mx-auto  text-white text-[25px] not-italic font-semibold leading-normal capitalize h-full'>
           CONTACT US
         </div>
         <div className='bg-white mt-[30px] w-[100%] sm:w-[70%] md:w-[97%] h-[260px] xl:h-[330px] rounded-[20px] mx-auto '>
@@ -49,15 +49,18 @@ const Contact = () => {
             <p className='text-[18px] lg:text-[22px] font-medium'>QUICK LINKS</p>
             <Link to={'/about'} className='cursor-pointer'>About</Link>
             <Link to={'/event'} className='cursor-pointer'>Events</Link>
-            <Link to={'/'} className='cursor-pointer'>Leads</Link>
+            <Link to={'/leads'} className='cursor-pointer'>Leads</Link>
             <Link to={'/'} className='cursor-pointer'>Register</Link>
           </div>
         </div>
         <div className='text-[15px] xl:text-[20px] font-medium w-[100%] sm:w-[70%] md:w-[97%] mx-auto flex items-center mt-[35px] mb-[18px] '>
-          <img src={copyright} className='h-[25px] translate-y-[2px]' />
+          <img src={copyright} className='h-[25px] translate-y-[2px] text-white' />
           <p className='pl-[2px]'>2023 KIIT KHWAAB. All rights reserved.</p>
 
         </div>
+      </div>
+      <div className="fixed top-0 -z-20 right-0 w-screen h-screen back">
+
       </div>
 
     </div>
