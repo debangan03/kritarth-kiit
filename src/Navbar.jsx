@@ -173,7 +173,7 @@ function Navbar() {
                 About
               </Link>
               <Link
-                to={'/'}
+                to={'/event'}
                 className="text-white hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               >
                 Events
