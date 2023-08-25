@@ -120,31 +120,31 @@ export const leadData = [
     },
     {
         id : 18,
+        image : 'Sourav Kumar Sahoo.jpg',
+        igLink: 'https://www.instagram.com/lonepair.4/',
+        linkedinLink:'https://www.linkedin.com/in/abhardwaj28/',
+        name: 'Sohini Joarder'
+    },
+    {
+        id : 19,
         image : 'Aditya Bhardwaj.jpg',
         igLink: 'https://www.instagram.com/lonepair.4/',
         linkedinLink:'https://www.linkedin.com/in/abhardwaj28/',
         name: 'Aditya Bhardwaj'
     },
     {
-        id : 19,
+        id : 20,
         image : 'Harsh Raj.jpg',
         igLink: 'https://www.instagram.com/harsh_rj002/',
         linkedinLink:'https://www.linkedin.com/in/harsh-raj-898340217',
         name: 'Harsh Raj'
     },
     {
-        id : 20,
+        id : 21,
         image : 'Rishi.jpg',
         igLink: 'https://instagram.com/raj_rishi_17_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D',
         linkedinLink:'https://www.linkedin.com/in/rishi-raj-81777622b/',
         name: 'Rishi Raj'
-    },
-    {
-        id : 21,
-        image : 'Sourav Kumar Sahoo.jpg',
-        igLink: 'https://www.instagram.com/lonepair.4/',
-        linkedinLink:'https://www.linkedin.com/in/abhardwaj28/',
-        name: 'Sohini Joarder'
     },
     {
         id : 22,

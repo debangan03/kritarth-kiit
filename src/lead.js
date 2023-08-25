@@ -1,9 +1,9 @@
 import React from "react";
 import { leadData } from "./leadData";
-import {instagram} from './images/instagram.svg';
+
 const Lead = () => {
     return (
-        <section>
+        <section className="text-white font-Mulish">
             <div className="w-full">
                 <h2 className="font-bold text-center text-2xl pt-5 pb-12">EVENT LEADS</h2>
             </div>
@@ -79,9 +79,17 @@ const Lead = () => {
             <div className="w-full">
                 <h2 className="font-bold text-center text-2xl pt-5 pb-12">WEB DEVELOPMENT TEAM</h2>
             </div>
+            <div className="flex flex-col items-center">
+                <img src={leadData[17].image} alt={leadData[17].name} class="rounded-full w-48 h-48 object-cover"/>
+                <h3 className="mt-4 font-bold">{leadData[17].name}</h3>
+                <ul className="mt-2 flex">
+                    <li className="pr-8"><a href={leadData[17].igLink}>Instagram Icon</a></li>
+                    <li><a href={leadData[17].linkedInLink}>LinkedIn Icon</a></li>
+                </ul>
+            </div>
             <div className="flex flex-wrap">
-            {leadData.slice(17, 22).map(item => (
-                <div key={item.name} className="w-full lg:w-1/5 p-4 flex flex-col items-center">
+            {leadData.slice(18, 22).map(item => (
+                <div key={item.name} className="w-full md:w-1/4 p-4 flex flex-col items-center">
                 <img src={item.image} alt={item.name} className="rounded-full w-48 h-48 object-cover"/>
                 <h3 className="mt-4 font-bold">{item.name}</h3>
                 <ul className="mt-2 flex">
@@ -91,6 +99,10 @@ const Lead = () => {
                 </div>
             ))}
             </div>
+
+            <div className="fixed top-0 -z-20 right-0 w-screen h-screen back">
+
+      </div>
         </section>
     )
 }
