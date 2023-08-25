@@ -55,7 +55,7 @@ function Navbar() {
             </Link>
             <Link
               onClick={() => { setabout(false); setevents(false); setleads(false); setcontact(false); setreg(true) }}
-              to={"/"}
+              to={"/form"}
               className={`font-semiblod ${reg && 'bg-[#3CA465]'} px-3 py-1  md:rounded-xl hover:text-gray-900`}
             >
               Register
@@ -185,7 +185,7 @@ function Navbar() {
                 Leads
               </Link>
               <Link
-                to={'/'}
+                to={'/form'}
                 className="text-white hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               >
                 Register
