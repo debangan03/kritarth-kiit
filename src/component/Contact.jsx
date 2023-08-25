@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 const Contact = () => {
   return (
-    <div className='w-[100vw] font-Poppins text-white'>
+    <div className='w-[100vw] font-Poppins text-white mt-7'>
       <div className='max-w-[1920px] mx-auto p-3 sm:p-0 flex flex-col justify-center mt-[10px]'>
         <div className='mx-auto  text-white text-[25px] not-italic font-semibold leading-normal capitalize h-full'>
           CONTACT US
