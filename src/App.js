@@ -9,27 +9,20 @@ import Contact from "./component/Contact";
 import Empty from "./component/Empty";
 import Event from "./component/Event";
 import Events from "./component/Events";
-import { useEffect, useState } from 'react'
-import ScrollToTop from "./component/Scrolltotop";
-import Lead from "./lead";
-
-
+import { useEffect, useState } from "react";
 
 function App() {
-  const [leads,setleads]= useState(0);
+  const [leads, setleads] = useState(0);
   return (
-    <BrowserRouter className="overflow-x-hidden">
-    <ScrollToTop />
+    <BrowserRouter>
       <Navbar />
 
-      <Routes>
+      <Routes className="overflow-x-hidden">
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contacts" element={<Empty />} />
-        <Route path="/event" element={<Event setleads={setleads}/>} />
-        <Route path="/events" element= {<Events leads={leads} />} />
-        <Route path="/leads" element={<Lead/>} />
-
+        <Route path="/event" element={<Event setleads={setleads} />} />
+        <Route path="/events" element={<Events leads={leads} />} />
       </Routes>
 
       <Contact />

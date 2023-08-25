@@ -6,18 +6,18 @@ import kiit from "./images/KIIT.png";
 function About() {
   return (
     <>
-      <div className="md:flex hidden text-white flex-col space-y-20 items-center justify-center mt-[35px]">
-        <div className="flex relative  rounded-xl bg-[rgba(186,186,186,0.34)]  items-center  h-[1100px] w-[1300px]">
-          <div className="h-full">
+      <div className="md:flex hidden text-white flex-col space-y-20  items-center justify-center mt-[35px]">
+        <div className="flex relative bg-gray-300/80   rounded-xl bg-grey-500  items-center  h-[1233px] w-[1233px]">
+          <div className="h-full mix-blend-multiply">
             <img
               src={founder}
               alt=""
-              className="shadow-inner mix-blend-multiply md:h-full md:w-full h-40 w-40"
+              className="shadow-inner  md:h-full md:w-full h-40 w-40"
             />
           </div>
-          <div className="absolute h-[1000px] w-[650px] rounded-md   bg-[rgba(127,127,127,0.45)] backdrop-blur-lg top-10 right-10 p-20">
-            <h1 className="text-25px font-bold mb-2">ABOUT FOUNDER</h1>
-            <p className="text-[15.9px] text-justify">
+          <div className="absolute h-[1156px] w-[595px] rounded-md   bg-[rgba(127,127,127,0.45)] backdrop-blur-lg top-10 right-10 p-20">
+            <h1 className=" font_header">ABOUT FOUNDER</h1>
+            <p className=" font_body">
               Prof. Achyuta Samanta is a social worker, philantrophist and
               educationalist. He established the prestigious educational
               institutions known as the Kalinga Institute of Social Sciences
@@ -52,17 +52,17 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="flex relative  rounded-xl bg-[rgba(186,186,186,0.34)]  items-center  h-[927px] w-[1233px]">
+        <div className="flex relative  rounded-xl bg-[rgba(186,186,186,0.34)]  items-center  h-[1127px] w-[1233px]">
           <div>
             <img
               src={kiss}
               alt=""
-              className="shadow-inner mix-blend-multiply md:h-full md:w-full h-40 w-40 "
+              className="shadow-inner  md:h-full md:w-full h-80 w-40 "
             />
           </div>
-          <div className="absolute h-[850px] w-[595px] rounded-xl   bg-[rgba(127,127,127,0.45)] backdrop-blur-lg top-10 left-10 p-20">
-            <h1 className="text-25px font-bold mb-2">ABOUT KISS</h1>
-            <p className="text-[14.9px] text-justify">
+          <div className="absolute h-[1050px] w-[595px] rounded-xl   bg-[rgba(127,127,127,0.45)] backdrop-blur-lg top-10 left-10 p-20">
+            <h1 className="font_header">ABOUT KISS</h1>
+            <p className="font_body">
               KISS was designated a Deemed University by the Ministry of Human Resource Development of the Government of India on August 25, 2017 (U/S 3 of the UGC Act, 1956).As a result, it has become India's and the world's first university completely dedicated to tribal students. The Kalinga Institute of Social Sciences (KISS), the world's largest tribal institute, provides food, housing, health care, and all other basic necessities of life to 50,000 poor tribal children (27,500 current students, 12,500 well-placed alumni, and 10,000 students in its various satellite centres) so that they can pursue their education from kindergarten to graduate school, as well as vocational training. Politicians, policymakers, planners, and social workers from India and abroad have lauded KISS as a one-of-a-kind effort to eradicate poverty via education and to utilise education as a weapon to empower the impoverished section of society and provide long-term employment.
               •We have a special consultative status with the Economic and Social Council of the United Nations (ECOSOC), the highest degree of UN accreditation for a non-governmental organization, and Guide star India's champion degree-Platinum Certification for NGO Transparency (2016) since 2015.
               •In the prestigious list of 189 top NGOs worldwide and the top 10 best NGOs in India published in 2019 by NGO Advisor, a Geneva-based independent media organization.
@@ -73,17 +73,17 @@ function About() {
             </p>
           </div>
         </div>{" "}
-        <div className="flex flex-col md:flex-row  relative  rounded-md bg-[rgba(186,186,186,0.34)]  items-center  h-[927px] w-[1233px]">
+        <div className="flex flex-col md:flex-row  relative  rounded-md bg-[rgba(186,186,186,0.34)]  items-center  h-[1127px] w-[1233px]">
           <div>
             <img
               src={kiit}
               alt=""
-              className="shadow-inner mix-blend-multiply"
+              className="shadow-inner "
             />
           </div>
-          <div className="absolute md:block  hidden h-[850px] w-[595px] rounded-md   bg-[rgba(127,127,127,0.45)] backdrop-blur-lg top-10 right-10 p-20">
-            <h1 className="text-25px font-bold mb-2">ABOUT KIIT</h1>
-            <p className="text-[15.9px] text-justify">
+          <div className="absolute md:block  hidden h-[1050px] w-[595px] rounded-md   bg-[rgba(127,127,127,0.45)] backdrop-blur-lg top-10 right-10 p-20">
+            <h1 className="font_header">ABOUT KIIT</h1>
+            <p className="font_body">
               Kalinga Institute of Industrial Technology (KIIT) Bhubaneswar is a
               deemed university in Kalinga, India. It is one of India's most
               prestigious universities, attracting students from all over the
@@ -126,7 +126,7 @@ function About() {
             data-te-ripple-color="light"
           >
             <img
-              className="rounded-t-lg bg-slate-800/20 mix-blend-multiply "
+              className="rounded-t-lg bg-slate-800/20  "
               src={founder}
               alt=""
             />
@@ -151,7 +151,7 @@ function About() {
             data-te-ripple-color="light"
           >
             <img
-              className="rounded-t-lg bg-slate-800/20 mix-blend-multiply"
+              className="rounded-t-lg bg-slate-800/20 "
               src={kiss}
               alt=""
             />
@@ -176,7 +176,7 @@ function About() {
             data-te-ripple-color="light"
           >
             <img
-              className="rounded-t-lg bg-slate-800/20 mix-blend-multiply"
+              className="rounded-t-lg bg-slate-800/20 "
               src={kiit}
               alt=""
             />
@@ -194,6 +194,9 @@ function About() {
 
           </div>
         </div>
+      </div>
+      <div className="fixed top-0 -z-20 right-0 w-screen h-screen back">
+
       </div>
     </>
   );
