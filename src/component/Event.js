@@ -72,7 +72,7 @@ const About = (props) => {
         <div className='p-3 xl:p-0 max-w-[1162px] w-full mx-auto md:mt-5'>
          <div className='w-full grid grid-cols-2 gap-5'>
             {event.map((abouts)=>{
-              return <div key={abouts.id} onClick={handleClick(abouts.id)} className='w-[500] h-[500px] bg-white'>
+              return <div key={abouts.id} onClick={handleClick(abouts.id)} className='w-[500] cursor-pointer h-[500px] bg-white'>
              {abouts.lead}
                       </div>
              })}
