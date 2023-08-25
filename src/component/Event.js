@@ -6,6 +6,7 @@ import {useState} from 'react'
 import {useEffect} from 'react'
 import kritarthlogo from '../images/kritarth logo 1 1.png'
 import cursor from '../images/cursor1.png'
+import { Link } from 'react-router-dom'
 
 
 const About = (props) => {
@@ -51,10 +52,11 @@ const About = (props) => {
                     <img src={kritarthlogo} alt="" />
                     <h1 className='absolute bottom-[0px] right-[25px] text-xl md:text-2xl lg:text-4xl text-white leading-3 font-normal font-poppins'>HEARTS OF HOPE</h1>
                 </div>
-                <button class="bg-[#3CA465] cursor-pointer text-[20px] text-white font-medium py-2 px-4 mt-[0px] md:mt-[40px] rounded-xl inline-flex items-center">
+                <Link to={"/form"}><button class="bg-[#3CA465] cursor-pointer text-[20px] text-white font-medium py-2 px-4 mt-[0px] md:mt-[40px] rounded-xl inline-flex items-center">
                     <span className='-translate-y-[2px] font-Rubik'>Register</span>
                     <img src={cursor} alt="" className='w-[18px] h-[18px] -translate-y-[2px] text-white fill-current ml-2'/>
                     </button>
+                </Link>
                 </div>
                 <div className='w-full md:w-[60%] flex items-center justify-center h-full'>
                   <div className='mx-1 ml:ml-0 md:mr-6 mb-1 md:mb-0 md:px-7 px-2 py-2 md:py-6 lg:py-9 xl:py-10 xl:px-12 rounded-[10px] md:rounded-[20px] flex items-center justify-center bg-black/20 shadow-md backdrop-blur-sm border-solid border-[0.795px] border-[#7F7F7F] italic'>
