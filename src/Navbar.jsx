@@ -2,7 +2,7 @@ import React from "react";
 import kiit from "./images/KIIT_LOGO_1.png";
 import ksac from "./images/KSAC_LOGO_1.png";
 // import back from "./images/Background_Image.png";
-import kritarthlogo from './images/kritarth logo 1 1.png'
+import kritarthlogo from './images/kritarth logo 1 1.svg'
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -30,7 +30,7 @@ function Navbar() {
         <div className="container mx-auto flex flex-wrap px-5 py-1 flex-col md:flex-row items-center">
           <div className="flex title-font font-base items-center text-gray-900 mb-4 md:mb-0">
             <a href="/">
-              <img src={kritarthlogo} alt="kritarthlogo" className="h-10 md:h-[60px] logo_shadow mix-blend-multiply" />
+              <img src={kritarthlogo} alt="kritarthlogo" className="h-10 md:h-[60px]" />
             </a>
           </div>
           <nav className="md:ml-auto md:mr-auto flex  flex-wrap text-white items-center md:text-lg text-sm space-x-2 justify-center nav_font">
