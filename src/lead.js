@@ -1,6 +1,6 @@
 import React from "react";
 import { leadData } from "./leadData";
-import CircularCounter from "./component/counter";
+
 const Lead = () => {
     return (
         <section className="text-white font-Mulish">
