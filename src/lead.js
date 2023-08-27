@@ -1,6 +1,7 @@
 import React from "react";
 import { leadData } from "./leadData";
-
+import CountdownTimer from "./component/countdown2";
+const targetDate = new Date('2023-09-16T17:59:59');
 const Lead = () => {
     return (
         <section className="text-white font-Mulish">
@@ -99,7 +100,7 @@ const Lead = () => {
                 </div>
             ))}
             </div>
-
+                
             <div className="fixed top-0 -z-20 right-0 w-screen h-screen back">
 
       </div>
