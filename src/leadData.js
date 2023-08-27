@@ -25,7 +25,7 @@ export const leadData = [
         image : 'pic.png',
         igLink: 'https://www.instagram.com/lonepair.4/',
         linkedInLink:'https://www.linkedin.com/in/abhardwaj28/',
-        name: 'Adrija'
+        name: 'Adrija Mitra'
     },
     {
         id : 5,
@@ -57,24 +57,25 @@ export const leadData = [
     },
     {
         id : 9,
-        image : 'Amol Kshitij.jpg',
-        igLink: 'https://www.instagram.com/lonepair.4/',
-        linkedinLink:'https://www.linkedin.com/in/abhardwaj28/',
-        name: 'Amol Kshitij'
-    },
-    {
-        id : 10,
-        image : 'pic.png',
-        igLink: 'https://www.instagram.com/lonepair.4/',
-        linkedinLink:'https://www.linkedin.com/in/abhardwaj28/',
-        name: 'Sayantan'
-    },
-    {
-        id : 11,
         image : 'KRITICA ARORA.jpg',
         igLink: 'https://instagram.com/kritica_26?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D',
         linkedinLink:'https://www.linkedin.com/in/kritica-arora-15648624a/',
         name: 'Kritica Arora'
+    },
+    
+    {
+        id : 10,
+        image : 'SAYANTAN BANERJEE.jpeg',
+        igLink: 'https://www.instagram.com/_dank_coffee_/',
+        linkedinLink:'https://www.linkedin.com/in/sayantan-banerjee-4815331b7/',
+        name: 'Sayantan Banerjee'
+    },
+    {
+        id : 11,
+        image : 'Amol Kshitij.jpg',
+        igLink: 'https://instagram.com/amol_kshitij?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D',
+        linkedinLink:'http://www.linkedin.com/in/amolkshitij',
+        name: 'Amol Kshitij'
     },
     {
         id : 12,
@@ -106,16 +107,16 @@ export const leadData = [
     },
     {
         id : 16,
-        image : 'Sourav Kumar Sahoo.jpg',
-        igLink: 'https://www.instagram.com/lonepair.4/',
-        linkedinLink:'https://www.linkedin.com/in/abhardwaj28/',
-        name: 'Aditya'
+        image : 'AdityaVatsya.jpg',
+        igLink: 'https://www.instagram.com/_adityavatsya/',
+        linkedinLink:'https://www.linkedin.com/in/adityavatsya/',
+        name: 'Aditya Vatsya'
     },
     {
         id : 17,
-        image : 'Sourav Kumar Sahoo.jpg',
-        igLink: 'https://www.instagram.com/lonepair.4/',
-        linkedinLink:'https://www.linkedin.com/in/abhardwaj28/',
+        image : 'Yash Anand.jpeg',
+        igLink: 'https://instagram.com/yash_anand16?igshid=MzRlODBiNWFlZA==',
+        linkedinLink:'https://www.linkedin.com/in/yash-anand-469698210',
         name: 'Yash Anand'
     },
     {

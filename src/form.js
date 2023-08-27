@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import PerfectScrollbar from 'perfect-scrollbar';
+import 'perfect-scrollbar/css/perfect-scrollbar.css';
 
 const FORM_URL = 'https://forms.office.com/r/bCAyi1W99t';
 
 const Form = () => {
+    const iframeRef = useRef(null);
+
+    useEffect(() => {
+        const ps = new PerfectScrollbar(iframeRef.current.contentWindow.document.body);
+        return () => ps.destroy();
+    }, []);
+
     return (
-        <div style={{ overflow: 'hidden', position: 'relative', paddingBottom: '56.25%' }}>
+        <div style={{ overflow: 'hidden', position: 'relative', minHeight: '100vh' }}>
             <iframe 
+                ref={iframeRef}
                 src={FORM_URL} 
                 frameBorder="0" 
                 marginWidth="0" 
@@ -23,6 +33,10 @@ const Form = () => {
                 mozallowfullscreen
                 msallowfullscreen
             />
+
+<div className="fixed top-0 -z-20 right-0 w-screen h-screen back">
+
+</div>
         </div>
     )
 }
