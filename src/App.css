@@ -79,3 +79,16 @@
   background: linear-gradient(243.88deg, #4D38CF 48.33%, #0F93A5 92.19%);
 
 }
+
+@keyframes flip {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(-90deg);
+  }
+}
+
+.animate-flip {
+  animation: flip 1s infinite;
+}
