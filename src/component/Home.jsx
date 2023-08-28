@@ -13,7 +13,7 @@ import CircularCounter from './counter'
 function Home() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
- 
+  const [didViewCountUp, setDidViewCountUp] = useState(false);
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % 3);
@@ -75,7 +75,7 @@ function Home() {
       </div>
       <div className='w-full md:w-[50%] 2xl:w-[50%] flex flex-col items-center justify-center h-full'>
         <div className='flex flex-col items-center justify-center'>
-          <CircularCounter/>
+        <CircularCounter didViewCountUp={didViewCountUp} setDidViewCountUp={setDidViewCountUp} />
           <div className='text-white font-Poppins text-xl md:text-3xl lg:text-4xl font-semibold'>Prize Money</div>
         </div>
       </div>

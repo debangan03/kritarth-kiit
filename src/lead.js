@@ -1,6 +1,6 @@
 import React from "react";
 import { leadData } from "./leadData";
-import CountdownTimer from "./component/countdown2";
+import CountdownTimer from "./component/countdown";
 const targetDate = new Date('2023-09-16T17:59:59');
 const Lead = () => {
     return (

@@ -52,6 +52,7 @@ function About() {
             </p>
           </div>
         </div>
+        
         <div className="flex relative  rounded-xl bg-[rgba(186,186,186,0.34)]  items-center  h-[1127px] w-[1233px]">
 
           <img
@@ -63,13 +64,14 @@ function About() {
           <div className="absolute h-fit w-[595px] rounded-xl   bg-[rgba(127,127,127,0.45)] backdrop-blur-lg top-10 left-10 p-16 text-justify">
             <h1 className="font_header">ABOUT KISS</h1>
             <p className="font_body">
-              KISS was designated a Deemed University by the Ministry of Human Resource Development of the Government of India on August 25, 2017 (U/S 3 of the UGC Act, 1956).As a result, it has become India's and the world's first university completely dedicated to tribal students. The Kalinga Institute of Social Sciences (KISS), the world's largest tribal institute, provides food, housing, health care, and all other basic necessities of life to 50,000 poor tribal children (27,500 current students, 12,500 well-placed alumni, and 10,000 students in its various satellite centres) so that they can pursue their education from kindergarten to graduate school, as well as vocational training. Politicians, policymakers, planners, and social workers from India and abroad have lauded KISS as a one-of-a-kind effort to eradicate poverty via education and to utilise education as a weapon to empower the impoverished section of society and provide long-term employment.<br />
+            KISS was designated a Deemed University by the Ministry of Human Resource Development of the Government of India on August 25, 2017 (U/S 3 of the UGC Act, 1956).As a result, it has become India's and the world's first university completely dedicated to tribal students. The Kalinga Institute of Social Sciences (KISS), the world's largest tribal institute, provides food, housing, health care, and all other basic necessities of life to 50,000 poor tribal children (27,500 current students, 12,500 well-placed alumni, and 10,000 students in its various satellite centres) so that they can pursue their education from kindergarten to graduate school, as well as vocational training. Politicians, policymakers, planners, and social workers from India and abroad have lauded KISS as a one-of-a-kind effort to eradicate poverty via education and to utilise education as a weapon to empower the impoverished section of society and provide long-term employment.<br />
               •We have a special consultative status with the Economic and Social Council of the United Nations (ECOSOC), the highest degree of UN accreditation for a non-governmental organization, and Guide star India's champion degree-Platinum Certification for NGO Transparency (2016) since 2015.<br />
               •In the prestigious list of 189 top NGOs worldwide and the top 10 best NGOs in India published in 2019 by NGO Advisor, a Geneva-based independent media organization.<br />
               •Programs and initiatives that are linked to and actively working to achieve the Sustainable Development Goals (SDGs) of the United Nations.<br />
               •Collaborations with a wide range of international organizations, including the US Federal Government, UNESCO, UNICEF, and UNEPA.<br />
               •Visited and lauded by dignitaries from 70 nations, including ambassadors and chiefs of state.<br />
-              •15 Nobel Prize winners have resided at the Institute.<br />
+              •15 Nobel Prize winners have resided at the Institute
+              <br />
             </p>
           </div>
         </div>{" "}
@@ -84,35 +86,13 @@ function About() {
           <div className="absolute md:block  hidden lg:h-[1050px] lg:w-[595px] mg:px-10 md:w-screen rounded-md   bg-[rgba(127,127,127,0.45)] backdrop-blur-lg top-10 right-10 p-16 text-justify">
             <h1 className="font_header">ABOUT KIIT</h1>
             <p className="font_body">
-              Kalinga Institute of Industrial Technology (KIIT) Bhubaneswar is a
-              deemed university in Kalinga, India. It is one of India's most
-              prestigious universities, attracting students from all over the
-              country and more than 50 countries to pursue professional and
-              technical education. Based on the concepts of compassion and
-              humanism, it has established a reputation as the most
-              student-friendly university in the temple city of
-              Bhubaneswar.Prof. Achyuta Samanta, an exceptional educator and
-              social activist, founded it in 1992-93 as a vocational training
-              centre with a seed capital of only Rs. 5000. KIIT has grown at an
-              exponential rate since then, setting high standards in every field
-              of study. With a diverse student body of 30,000 students
-              representing all 50 Indian states and 50 other countries, it is on
-              its way to becoming an international hub for great professional
-              and technical education. The Ministry of Human Resource
-              Development of the Government of India recently classified KIIT
-              Deemed to be University as a "Institution of Eminence" (IoE).KIIT
-              is one of ten public and private universities that will be
-              transformed into world-class schools under the Government of
-              India's 'IoE' scheme, which intends to put India on the global
-              education map. It is Eastern India's sole university to be ranked
-              in the Times Higher Education World University Rankings 2019 and
-              the QS BRICS World University Rankings. The university was placed
-              second among all self-financing institutions in India in the
-              MHRD's Atal Ranking of Institutions on Innovation Achievements
-              (ARIIA). KIIT's 22 Schools serve over 30,000 students, offering
-              internationally acknowledged bachelor's, master's, and doctoral
-              degree courses in over 100 areas such as engineering, medicine,
-              management, biotechnology, and law.
+            KISS was designated a Deemed University by the Ministry of Human Resource Development of the Government of India on August 25, 2017 (U/S 3 of the UGC Act, 1956).As a result, it has become India's and the world's first university completely dedicated to tribal students. The Kalinga Institute of Social Sciences (KISS), the world's largest tribal institute, provides food, housing, health care, and all other basic necessities of life to 50,000 poor tribal children (27,500 current students, 12,500 well-placed alumni, and 10,000 students in its various satellite centres) so that they can pursue their education from kindergarten to graduate school, as well as vocational training. Politicians, policymakers, planners, and social workers from India and abroad have lauded KISS as a one-of-a-kind effort to eradicate poverty via education and to utilise education as a weapon to empower the impoverished section of society and provide long-term employment.<br />
+              •We have a special consultative status with the Economic and Social Council of the United Nations (ECOSOC), the highest degree of UN accreditation for a non-governmental organization, and Guide star India's champion degree-Platinum Certification for NGO Transparency (2016) since 2015.<br />
+              •In the prestigious list of 189 top NGOs worldwide and the top 10 best NGOs in India published in 2019 by NGO Advisor, a Geneva-based independent media organization.<br />
+              •Programs and initiatives that are linked to and actively working to achieve the Sustainable Development Goals (SDGs) of the United Nations.<br />
+              •Collaborations with a wide range of international organizations, including the US Federal Government, UNESCO, UNICEF, and UNEPA.<br />
+              •Visited and lauded by dignitaries from 70 nations, including ambassadors and chiefs of state.<br />
+              •15 Nobel Prize winners have resided at the Institute
             </p>
           </div>
         </div>

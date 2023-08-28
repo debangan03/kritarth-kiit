@@ -1,7 +1,7 @@
 export const leadData = [
     {
         id : 1,
-        image : 'pic.png',
+        image : 'Ayush.png',
         igLink: 'https://instagram.com/shivramkrishna_?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D',
         linkedInLink:'https://www.linkedin.com/in/shivram-krishna-819536161',
         name: 'VN Ayush Mudaliyar'
