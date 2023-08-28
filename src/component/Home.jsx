@@ -8,12 +8,14 @@ import kritarthlogo from '../images/kritarth logo 1 1.png'
 import cursor from '../images/cursor1.png'
 import { Link } from 'react-router-dom'
 import CircularCounter from './counter'
+import CountdownTimer from "./countdown";
 
+const targetDate = new Date('2023-09-16T17:59:59');
 
 function Home() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
- 
+  const [didViewCountUp, setDidViewCountUp] = useState(false);
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % 3);
@@ -76,7 +78,7 @@ function Home() {
       </div>
       <div className='w-full md:w-[50%] 2xl:w-[50%] flex flex-col items-center justify-center h-full'>
         <div className='flex flex-col items-center justify-center'>
-          <CircularCounter/>
+        <CircularCounter didViewCountUp={didViewCountUp} setDidViewCountUp={setDidViewCountUp} />
           <div className='text-white font-Poppins text-xl md:text-3xl lg:text-4xl font-semibold'>Prize Money</div>
         </div>
       </div>
@@ -84,7 +86,9 @@ function Home() {
       </div>
     </div>
     </div>
-    
+    <div className='flex items-center h-screen justify-center'>
+      <CountdownTimer targetDate={targetDate} />
+    </div>
     <div className="fixed top-0 -z-20 right-0 w-[100vw] h-[100vw]">
       {imageslider.map((image, index) => (
                     <img

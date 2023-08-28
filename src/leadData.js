@@ -1,7 +1,7 @@
 export const leadData = [
     {
         id : 1,
-        image : 'pic.png',
+        image : 'Ayush.png',
         igLink: 'https://instagram.com/shivramkrishna_?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D',
         linkedInLink:'https://www.linkedin.com/in/shivram-krishna-819536161',
         name: 'VN Ayush Mudaliyar'
@@ -55,14 +55,14 @@ export const leadData = [
         linkedinLink:'https://www.linkedin.com/in/raj-nandani-1102feb',
         name: 'Raj Nandani'
     },
+    
     {
         id : 9,
-        image : 'KRITICA ARORA.jpg',
-        igLink: 'https://instagram.com/kritica_26?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D',
-        linkedinLink:'https://www.linkedin.com/in/kritica-arora-15648624a/',
-        name: 'Kritica Arora'
+        image : 'Amol Kshitij.jpg',
+        igLink: 'https://instagram.com/amol_kshitij?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D',
+        linkedinLink:'http://www.linkedin.com/in/amolkshitij',
+        name: 'Amol Kshitij'
     },
-    
     {
         id : 10,
         image : 'SAYANTAN BANERJEE.jpeg',
@@ -70,12 +70,13 @@ export const leadData = [
         linkedinLink:'https://www.linkedin.com/in/sayantan-banerjee-4815331b7/',
         name: 'Sayantan Banerjee'
     },
+    
     {
         id : 11,
-        image : 'Amol Kshitij.jpg',
-        igLink: 'https://instagram.com/amol_kshitij?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D',
-        linkedinLink:'http://www.linkedin.com/in/amolkshitij',
-        name: 'Amol Kshitij'
+        image : 'KRITICA ARORA.jpg',
+        igLink: 'https://instagram.com/kritica_26?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D',
+        linkedinLink:'https://www.linkedin.com/in/kritica-arora-15648624a/',
+        name: 'Kritica Arora'
     },
     {
         id : 12,

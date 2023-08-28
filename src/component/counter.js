@@ -2,25 +2,15 @@ import React, { useState, useEffect } from 'react';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
-const CircularCounter = () => {
-  const [didViewCountUp, setDidViewCountUp] = useState(false);
+const CircularCounter = ({ didViewCountUp, setDidViewCountUp }) => {
   const [progress, setProgress] = useState(0);
 
-
   const onVisibilityChange = isVisible => {
-    if (isVisible) {
+    if (isVisible && !didViewCountUp) {
       setDidViewCountUp(true);
       setProgress(100);
-    } else {
-      setDidViewCountUp(false);
     }
   };
-
-  useEffect(() => {
-    if (!didViewCountUp) {
-      setProgress(0);
-    }
-  }, [didViewCountUp]);
 
   return (
     <div className="flex justify-center items-center ">

@@ -53,7 +53,7 @@ function Navbar() {
               to={"/leads"}
               className={`font-semiblod ${leads && 'bg-[#3CA465]'} px-3 py-1  md:rounded-xl hover:text-gray-900`}
             >
-              Members
+              Leads
             </Link>
             <Link
               onClick={() => { setabout(false); setevents(false); setleads(false); setcontact(false); setreg(true) }}
@@ -74,11 +74,11 @@ function Navbar() {
           <div className="inline-flex items-center  ">
             <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 ">
                 
-              <a href="https://ksac.kiit.ac.in/">
+              <a href="https://ksac.kiit.ac.in/" target="_blank">
               <img src={ksac} alt="ksaclogo" className="h-10 md:h-[60px] p-1" />
               </a>
 
-              <a href="https://kiit.ac.in/">
+              <a href="https://kiit.ac.in/" target="_blank">
               <img src={kiit} alt="kiitlogo" className="h-10 md:h-[60px] p-1" />
               </a>
             </a>
@@ -162,16 +162,21 @@ function Navbar() {
                   >
                     <span className="absolute -inset-1.5" />
                     <span className="sr-only">Open user menu</span>
+                    <a href="https://kiit.ac.in/" target="_blank">
                     <img
                       className="h-10 w-12 py-[2px] p-1"
                       src={kiit}
                       alt=""
                     />
-                    <img
-                      className="h-10 w-auto p-1"
-                      src={ksac}
-                      alt="Your Company"
-                    />
+                    </a>
+                    
+                    <a href="https://ksac.kiit.ac.in/" target="_blank">
+                      <img
+                        className="h-10 w-auto p-1"
+                        src={ksac}
+                        alt="Your Company"
+                      />
+                    </a>
                   </button>
                 </div>
               </div>
@@ -203,7 +208,7 @@ function Navbar() {
                 to={'/leads'}
                 className="text-white hover:bg-green-600 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               >
-                Members
+                Leads
               </Link>
               <Link
                 onClick={() => setclick(false)}
