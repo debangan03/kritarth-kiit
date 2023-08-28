@@ -8,7 +8,7 @@
 @keyframes from-left {
   from { 
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-2px);
   }
   to { 
     opacity: 1; 
@@ -18,14 +18,14 @@
  
 .animate-fade-in {
   animation-name: from-left;
-  animation-duration: 1s;
+  animation-duration: 0.2s;
   animation-timing-function: ease-in-out;
 }
 
 @keyframes from-right {
   from { 
     opacity: 0;
-    transform: translateX(20px);
+    transform: translateX(2px);
     }
   to { 
     opacity: 1; 
@@ -35,7 +35,7 @@
 
 .animate-from-bottom {
   animation-name: from-right;
-  animation-duration: 1s;
+  animation-duration: 0.2s;
   animation-timing-function: ease-in-out;
 }
 
