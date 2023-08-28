@@ -32,7 +32,7 @@ function Home() {
                 
               <div className='absolute flex md:flex-row flex-col justify-between gap-4 items-center top-0 bottom-0 w-full h-full'>
                 <div className='md:self-start w-[230px] md:w-[40%] lg:w-[50%] h-full flex flex-col justify-center gap-8 md:gap-8 items-center'>
-                <div className='relative mt-2 md:mt-0 ml-[0px] md:ml-[15px]'>
+                <div className='relative mt-2 md:mt-0 ml-[0px] md:ml-[15px] zoom-in-out-box'>
                     <img src={kritarthlogo} alt="" className='self-start' />
                     <h1 className='absolute bottom-[0px] right-[25px] text-xl md:text-2xl lg:text-4xl text-white leading-3 font-normal font-poppins'>HEARTS OF HOPE</h1>
                 </div>
