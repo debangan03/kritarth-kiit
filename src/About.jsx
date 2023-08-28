@@ -7,12 +7,12 @@ function About() {
   return (
     <>
       <div className="md:flex hidden text-white flex-col space-y-20 max-w-screen  items-center justify-center mt-[35px]">
-        <div className="flex relative max-w-screen  bg-gray-300/80   rounded-xl bg-grey-500  items-center  h-[1233px] w-[1233px]">
+        <div className="flex relative max-w-screen  bg-white  rounded-xl bg-grey-500  items-center  h-[1233px] w-[1233px]">
           <div className="h-full mix-blend-multiply">
             <img
               src={founder}
               alt=""
-              className="shadow-inner  md:h-full md:w-full h-40 w-40"
+              className="shadow-inner mix-blend-multiply md:h-full md:w-full h-40 w-40"
             />
           </div>
           <div className="absolute h-[1156px] w-[595px] rounded-md   bg-[rgba(127,127,127,0.45)] backdrop-blur-lg top-10 right-10 p-16 text-justify">
@@ -52,27 +52,6 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="flex relative  rounded-xl bg-[rgba(186,186,186,0.34)]  items-center  h-[1127px] w-[1233px]">
-
-          <img
-            src={kiss}
-            alt=""
-            className="shadow-inner  md:h-full md:w-full object-cover "
-          />
-
-          <div className="absolute h-fit w-[595px] rounded-xl   bg-[rgba(127,127,127,0.45)] backdrop-blur-lg top-10 left-10 p-16 text-justify">
-            <h1 className="font_header">ABOUT KISS</h1>
-            <p className="font_body">
-              KISS was designated a Deemed University by the Ministry of Human Resource Development of the Government of India on August 25, 2017 (U/S 3 of the UGC Act, 1956).As a result, it has become India's and the world's first university completely dedicated to tribal students. The Kalinga Institute of Social Sciences (KISS), the world's largest tribal institute, provides food, housing, health care, and all other basic necessities of life to 50,000 poor tribal children (27,500 current students, 12,500 well-placed alumni, and 10,000 students in its various satellite centres) so that they can pursue their education from kindergarten to graduate school, as well as vocational training. Politicians, policymakers, planners, and social workers from India and abroad have lauded KISS as a one-of-a-kind effort to eradicate poverty via education and to utilise education as a weapon to empower the impoverished section of society and provide long-term employment.<br />
-              •We have a special consultative status with the Economic and Social Council of the United Nations (ECOSOC), the highest degree of UN accreditation for a non-governmental organization, and Guide star India's champion degree-Platinum Certification for NGO Transparency (2016) since 2015.<br />
-              •In the prestigious list of 189 top NGOs worldwide and the top 10 best NGOs in India published in 2019 by NGO Advisor, a Geneva-based independent media organization.<br />
-              •Programs and initiatives that are linked to and actively working to achieve the Sustainable Development Goals (SDGs) of the United Nations.<br />
-              •Collaborations with a wide range of international organizations, including the US Federal Government, UNESCO, UNICEF, and UNEPA.<br />
-              •Visited and lauded by dignitaries from 70 nations, including ambassadors and chiefs of state.<br />
-              •15 Nobel Prize winners have resided at the Institute.<br />
-            </p>
-          </div>
-        </div>{" "}
         <div className="flex  md:flex-row  relative  rounded-md bg-[rgba(186,186,186,0.34)]  items-center  h-[1127px] w-[1233px]">
 
           <img height={1127}
@@ -116,6 +95,28 @@ function About() {
             </p>
           </div>
         </div>
+        <div className="flex relative  rounded-xl bg-[rgba(186,186,186,0.34)]  items-center  h-[1127px] w-[1233px]">
+
+          <img
+            src={kiss}
+            alt=""
+            className="shadow-inner  md:h-full md:w-full object-cover "
+          />
+
+          <div className="absolute h-fit w-[595px] rounded-xl   bg-[rgba(127,127,127,0.45)] backdrop-blur-lg top-10 left-10 p-16 text-justify">
+            <h1 className="font_header">ABOUT KISS</h1>
+            <p className="font_body">
+              KISS was designated a Deemed University by the Ministry of Human Resource Development of the Government of India on August 25, 2017 (U/S 3 of the UGC Act, 1956).As a result, it has become India's and the world's first university completely dedicated to tribal students. The Kalinga Institute of Social Sciences (KISS), the world's largest tribal institute, provides food, housing, health care, and all other basic necessities of life to 50,000 poor tribal children (27,500 current students, 12,500 well-placed alumni, and 10,000 students in its various satellite centres) so that they can pursue their education from kindergarten to graduate school, as well as vocational training. Politicians, policymakers, planners, and social workers from India and abroad have lauded KISS as a one-of-a-kind effort to eradicate poverty via education and to utilise education as a weapon to empower the impoverished section of society and provide long-term employment.<br />
+              •We have a special consultative status with the Economic and Social Council of the United Nations (ECOSOC), the highest degree of UN accreditation for a non-governmental organization, and Guide star India's champion degree-Platinum Certification for NGO Transparency (2016) since 2015.<br />
+              •In the prestigious list of 189 top NGOs worldwide and the top 10 best NGOs in India published in 2019 by NGO Advisor, a Geneva-based independent media organization.<br />
+              •Programs and initiatives that are linked to and actively working to achieve the Sustainable Development Goals (SDGs) of the United Nations.<br />
+              •Collaborations with a wide range of international organizations, including the US Federal Government, UNESCO, UNICEF, and UNEPA.<br />
+              •Visited and lauded by dignitaries from 70 nations, including ambassadors and chiefs of state.<br />
+              •15 Nobel Prize winners have resided at the Institute.<br />
+            </p>
+          </div>
+        </div>{" "}
+        
         <div className="mt-10" />
       </div>
       <div className="  bg-transparent md:hidden p-6 flex flex-wrap mt-8 space-y-20">

@@ -71,7 +71,7 @@
 
 .logo_shadow{
   
-  box-shadow: 10px 15px 10px 0px rgba(0, 0, 0, 0.51);
+  filter:drop-shadow(10px 15px 10px 0px rgba(0, 0, 0, 0.51));
 
 }
 
