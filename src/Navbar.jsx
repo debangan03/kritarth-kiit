@@ -15,7 +15,7 @@ function Navbar() {
   const [reg, setreg] = useState(false);
   const [navColor, setnavColor] = useState("transparent");
   const listenScrollEvent = () => {
-    window.scrollY != 0 ? setnavColor("slate-400") : setnavColor("blur");
+    window.scrollY >30 ? setnavColor("backdrop-blur-md") : setnavColor("transparent");
 
   };
   useEffect(() => {
@@ -26,12 +26,12 @@ function Navbar() {
   }, []);
   return (
     <>
-      <header className={`text-gray-90 bg-${navColor} hidden w-screen md:flex shadow-2xl z-50 shadow-slate-700/10 body-font  lg:sticky top-0 `}>
+      <header className={`text-gray-90 ${navColor} hidden w-screen md:flex shadow-2xl z-50 shadow-slate-700/10 body-font  lg:sticky top-0 `}>
         <div className="container mx-auto flex flex-wrap px-5 py-1 flex-col md:flex-row items-center">
           <div className="flex title-font font-base items-center text-gray-900 mb-4 md:mb-0">
-            <a href="/">
-              <img src={kritarthlogo} alt="kritarthlogo" className="h-10 md:h-[60px]" />
-            </a>
+            <Link to={'/'} className="px-10 ">
+              <img src={kritarthlogo} alt="kritarthlogo" className="logo_shadow  h-10 w-full md:h-[60px] backdrop-sha" />
+            </Link>
           </div>
           <nav className="md:ml-auto md:mr-auto flex  flex-wrap text-white items-center md:text-lg text-sm space-x-2 justify-center nav_font">
             <Link
@@ -70,17 +70,24 @@ function Navbar() {
               Contact
             </Link>
           </nav>
+          
           <div className="inline-flex items-center  ">
             <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 ">
+                
+              <a href="https://ksac.kiit.ac.in/">
               <img src={ksac} alt="ksaclogo" className="h-10 md:h-[60px] p-1" />
+              </a>
+
+              <a href="https://kiit.ac.in/">
               <img src={kiit} alt="kiitlogo" className="h-10 md:h-[60px] p-1" />
+              </a>
             </a>
           </div>
         </div>
       </header>
 
-      <nav className="bg-slate-500/40 md:hidden sticky top-0 z-50">
-        <div className="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
+      <nav className="bg-transparent md:hidden sticky top-0 z-50">
+        <div className={`mx-auto ${navColor} ${click?"backdrop-blur-md":""} max-w-7xl px-2 md:px-6 lg:px-8`}>
           <div className="relative flex h-16 items-center justify-between">
             <div
               className="absolute inset-y-0 left-0 flex items-center md:hidden"
@@ -173,7 +180,7 @@ function Navbar() {
         </div>
         {/* Mobile menu, show/hide based on menu state. */}
         {click && (
-          <div className="md:hidden fixed backdrop-blur-sm bg-slate-500/40 w-screen z-50 text-center" id="mobile-menu">
+          <div className={`md:hidden fixed backdrop-blur-md    w-screen z-50 text-center`} id="mobile-menu">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {/* Current: "bg-gray-900 text-white", Default: "text-white hover:bg-gray-700 hover:text-white" */}
               <Link
