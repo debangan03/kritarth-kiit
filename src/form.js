@@ -14,7 +14,8 @@ const Form = () => {
 
     return (
         <div style={{ overflow: 'hidden', position: 'relative', minHeight: '100vh' }}>
-            <iframe 
+            <iframe
+            title="something" 
                 ref={iframeRef}
                 src={FORM_URL} 
                 frameBorder="0" 
