@@ -36,7 +36,7 @@ function Home() {
                     <img src={kritarthlogo} alt="" className='self-start' />
                     <h1 className='absolute bottom-[0px] right-[25px] text-xl md:text-2xl lg:text-4xl text-white leading-3 font-normal font-poppins'>HEARTS OF HOPE</h1>
                 </div>
-                <Link to={"/form"}><button class="bg-[#3CA465] cursor-pointer text-[20px] text-white font-medium py-2 px-4 mt-[0px] md:mt-[40px] rounded-xl inline-flex items-center">
+                <Link to={"/form"}><button className="bg-[#3CA465] cursor-pointer text-[20px] text-white font-medium py-2 px-4 mt-[0px] md:mt-[40px] rounded-xl inline-flex items-center">
                     <span className='font-Rubik'>Register</span>
                     <img src={cursor} alt="" className='w-[18px] h-[18px]  text-white fill-current ml-2'/>
                     </button>
